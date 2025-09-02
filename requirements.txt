@@ -1,0 +1,50 @@
+# Core Python utilities
+numpy
+scipy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning
+scikit-learn
+xgboost
+lightgbm
+catboost
+
+# Deep Learning
+torch
+torchvision
+torchaudio
+
+
+# Natural Language Processing
+nltk
+spacy
+transformers
+datasets 
+evaluate 
+accelerate
+
+# Data handling / I/O
+h5py
+pyarrow
+fastparquet
+openpyxl
+
+# Model persistence / deployment
+joblib
+mlflow
+
+# Notebooks & Experimentation
+jupyter
+notebook
+ipykernel
+jupyterlab
+
+# Utilities
+tqdm
+requests
+beautifulsoup4
