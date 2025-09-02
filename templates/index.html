@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fake News Detector</h1>
+        <p>Enter a news article or text below to check if it's real or fake.</p>
+        
+        <!-- Form to submit the news text to the /predict endpoint -->
+        <form action="{{ url_for('predict') }}" method="post">
+            <textarea name="news_text" rows="12" placeholder="Paste your news article here..." required>{{ original_text or '' }}</textarea>
+            <button type="submit">Check News</button>
+        </form>
+
+        <!-- Section to display the prediction result -->
+        {% if prediction_text %}
+        <div class="result">
+            <h2>Result:</h2>
+            <p>{{ prediction_text }}</p>
+        </div>
+        {% endif %}
