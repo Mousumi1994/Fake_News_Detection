@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container for the content */
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    color: #1c1e21;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #606770;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+/* Text area for input */
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 150px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+/* Submit button styling */
+button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #166fe5;
+    transform: translateY(-2px);
+}
+
+/* Result display section */
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f7f8fa;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.result h2 {
+    margin-top: 0;
+    color: #1c1e21;
+}
+
+.result p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0d1a4b;
+    margin-bottom: 0;
+}
